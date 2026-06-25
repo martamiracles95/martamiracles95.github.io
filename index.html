@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg,#667eea,#764ba2);
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:30px;
+        }
+
+        .container{
+            max-width:900px;
+            width:100%;
+            background:white;
+            border-radius:24px;
+            overflow:hidden;
+            box-shadow:0 20px 50px rgba(0,0,0,0.2);
+        }
+
+        .hero{
+            background:linear-gradient(135deg,#4f46e5,#7c3aed);
+            color:white;
+            text-align:center;
+            padding:50px 30px;
+        }
+
+        .profile-img{
+            width:140px;
+            height:140px;
+            border-radius:50%;
+            border:5px solid white;
+            object-fit:cover;
+            margin-bottom:20px;
+        }
+
+        .hero h1{
+            font-size:2rem;
+            margin-bottom:10px;
+        }
+
+        .hero p{
+            opacity:0.9;
+        }
+
+        .content{
+            padding:40px;
+        }
+
+        .section{
+            margin-bottom:35px;
+        }
+
+        .section h2{
+            color:#4f46e5;
+            margin-bottom:15px;
+            font-size:1.3rem;
+        }
+
+        .info-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:#f8fafc;
+            padding:20px;
+            border-radius:16px;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+            box-shadow:0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .card h3{
+            color:#333;
+            margin-bottom:8px;
+        }
+
+        .card p{
+            color:#666;
+            line-height:1.6;
+        }
+
+        .social-links{
+            display:flex;
+            flex-wrap:wrap;
+            gap:15px;
+        }
+
+        .social-links a{
+            text-decoration:none;
+            background:#4f46e5;
+            color:white;
+            padding:12px 18px;
+            border-radius:12px;
+            transition:0.3s;
+        }
+
+        .social-links a:hover{
+            background:#3730a3;
+        }
+
+        .footer{
+            text-align:center;
+            padding:20px;
+            color:#777;
+            border-top:1px solid #eee;
+        }
+
+        @media(max-width:768px){
+            .content{
+                padding:25px;
+            }
+
+            .hero h1{
+                font-size:1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="hero">
+        <img src="https://via.placeholder.com/140" alt="Foto Profil" class="profile-img">
+
+        <h1>Marta Miracle Simanjuntak</h1>
+        <p>Bidan | ASN | Pembelajar Sepanjang Hayat</p>
+    </div>
+
+    <div class="content">
+
+        <div class="section">
+            <h2>Tentang Saya</h2>
+            <p>
+                Halo! Saya Marta Miracle Simanjuntak. Saya seorang bidan yang bekerja
+                di lingkungan rumah sakit pemerintah. Saya memiliki minat pada
+                kesehatan ibu dan anak, pendidikan, teknologi, serta pengembangan diri.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Informasi Pribadi</h2>
+
+            <div class="info-grid">
+
+                <div class="card">
+                    <h3>👤 Nama Lengkap</h3>
+                    <p>Marta Miracle Simanjuntak</p>
+                </div>
+
+                <div class="card">
+                    <h3>💼 Profesi</h3>
+                    <p>Bidan ASN</p>
+                </div>
+
+                <div class="card">
+                    <h3>📍 Lokasi</h3>
+                    <p>Jakarta, Indonesia</p>
+                </div>
+
+                <div class="card">
+                    <h3>🎓 Pendidikan</h3>
+                    <p>Bidang Kesehatan & Kebidanan</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Minat & Hobi</h2>
+
+            <div class="info-grid">
+
+                <div class="card">
+                    <h3>🥾 Hiking</h3>
+                    <p>Menikmati kegiatan alam dan pendakian gunung.</p>
+                </div>
+
+                <div class="card">
+                    <h3>✈️ Traveling</h3>
+                    <p>Suka menjelajahi tempat baru dan budaya berbeda.</p>
+                </div>
+
+                <div class="card">
+                    <h3>📚 Belajar</h3>
+                    <p>Tertarik pada kesehatan, teknologi, dan pengembangan diri.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Media Sosial</h2>
+
+            <div class="social-links">
+                <a href="https://instagram.com/" target="_blank">Instagram</a>
+                <a href="https://facebook.com/" target="_blank">Facebook</a>
+                <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+                <a href="mailto:emailanda@example.com">Email</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Quote Favorit</h2>
+
+            <div class="card">
+                <p>
+                    "Percayalah kepada Tuhan dengan segenap hatimu dan janganlah
+                    bersandar kepada pengertianmu sendiri."
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © 2026 Marta Miracle Simanjuntak • All Rights Reserved
+    </div>
+
+</div>
+
+</body>
+</html>
